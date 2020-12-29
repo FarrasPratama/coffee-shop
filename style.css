@@ -29,7 +29,7 @@ nav {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    color: white;
+    color: red;
 }
 
 .jumbotron {
@@ -73,7 +73,7 @@ nav {
     margin-bottom: 40px;
 }
 
-.btn-shop {
+.btn-shop, .btn-shop:hover {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -83,7 +83,14 @@ nav {
     border: 2px solid #F89F2A;
     box-sizing: border-box;
     border-radius: 30px;
-    padding: 0.2em 0.8em 0.2em 0.8em; 
+    padding: 0.2em 0.8em 0.2em 0.8em;
+    background-color: transparent;
+}
+
+.btn-shop:hover {
+    transform: scale(1.1);
+    background: red;
+    text-decoration: none;
 }
 
 .hero-image {
@@ -117,6 +124,11 @@ nav {
     text-align: center;
     background: #CDCDCD;
     border-radius: 30px;
+    border: none;
+}
+
+.col:hover {
+    transform: scale(1.1);
 }
 
 .pop-item {
@@ -125,7 +137,7 @@ nav {
     margin: 5px;
 }
 
-.sub-menu {
+.sub-menu, .sub-menu:hover {
     margin: 5px;
     display: block;
     font-style: normal;
@@ -135,7 +147,16 @@ nav {
     color: #767676;
 }
 
-.name-item {
+.sub-menu:hover {
+    text-decoration: none;
+}
+
+.col-button {
+    background-color: transparent;
+    border: none;
+}
+
+.name-item, .name-item:hover {
     display: block;
     margin: 5px;
     font-style: bold;
@@ -144,6 +165,10 @@ nav {
     line-height: 19px;
     text-align: center;
     color: #000000;
+}
+
+.name-item:hover {
+    text-decoration: none;
 }
 
 .price {
