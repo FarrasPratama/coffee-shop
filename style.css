@@ -185,11 +185,30 @@ nav {
 }
 
 /* TABLET */
-@media (min-width: 768px) {
+@media screen and (max-width: 1080px) {
     
+    .container {
+        width: 100%;
+    }
+    .left {
+        width: 25%;
+        background-color: #89d0ff;
+    }
+    .middle {
+        width: 68%;
+        float: right;
+    }
+    
+    .right {
+        clear: both;
+        padding: 1% 4%;
+        width: auto;
+        float: none;
+    }
 
-
-
+    .navbar-expand-lg {
+    background-color: white;
+    }
 }
 
 /* MOBILE */
@@ -217,9 +236,32 @@ nav {
 }
 
 @media screen and (max-width: 480px){ 
-    
+
     #header{ height: auto;
     }
     #sidebar{ display: none;
     }
+}
+
+@media screen and (max-width: 780px) {
+    
+    .header, 
+    .footer{
+        text-align: center;
+    }
+    .left {
+        width: auto;
+        float: none;
+    }
+    
+    .middle {
+        width: auto;
+        float: none;
+    }
+    
+    .right {
+        width: auto;
+        float: none;
+    }
+
 }
