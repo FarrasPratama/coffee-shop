@@ -1,137 +1,331 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <!-- MY CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0.11/dist/flickity.min.css">
 
-    <!-- Bootstrap Scripts -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <title>Starbucks Coffee</title>
+    <!-- Page Icon -->
+    <link rel="shortcut icon" href="img/brand.svg">
+
+    <title>Starbucks</title>
   </head>
   <body>
-    <!-- Navbar hayyy-->
-    <nav class="navbar fixed-top navbar-expand-lg">
+    <!--------- NAVBAR --------->
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <img class="navbar-logo" src="img/logo-starbucks.png" alt="Starbucks">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">☕</i></span>
+        <!-- Logo Starbucks -->
+        <a class="navbar-brand" href="#"><img src="img/brand.svg" class="d-inline-block align-top" alt="Logo-Starbucks" loading="lazy">
+          STARBUCKS
+        </a>
+        <!-- Tombol Dropdown -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-link" href="#">What's New</a>
-            <a class="nav-link" href="#">Coffee</a>
-            <a class="nav-link" href="#">Menu</a>
-            <a class="nav-link" href="#">Merch</a>
-            <a class="nav-link" href="#">Responsibility</a>
-            <a class="nav-link" href="#">Rewards</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-            </svg>Find Us</a>
-          </div>
+        <!-- Menu Navigasi -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item nav-style">
+              <a class="nav-link" href="#">What's Next</a>
+            </li>
+            <li class="nav-item nav-style">
+              <a class="nav-link" href="#">Coffee</a>
+            </li>
+            <li class="nav-item nav-style">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item nav-style">
+              <a class="nav-link" href="#">Merch</a>
+            </li>
+            <li class="nav-item nav-style">
+              <a class="nav-link" href="#">Responsibility</a>
+            </li>
+            <li class="nav-item nav-style">
+              <a class="nav-link" href="#">Rewards</a>
+            </li>
+            <li class="nav-item nav-style">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+              </svg> Find Us</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-    <!-- end of Navbar -->
+    <!--------- end of NAVBAR -->
 
-    <!-- Hero Image -->
-    <div class="jumbotron jumbotron-fluid">
+    <!--------- HERO IMAGE --------->
+    <div class="hero-image">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1 class="tagline-h1">It’s not just a Coffee<br/>It’s <b class="tagline-b">STARBUCKS!</b></h1>
-            <h3 class="tagline-h3">Carry The Marry!</h3>
-            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the
-              1500s, when an unknown printer took a galley of type and scrambled it to
-              make a type specimen book. It has survived not only five centuries, but also
-              the leap into electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets containing
-              and more recently with desktop publishing software.</p>
-            <button href="#" class="btn-shop">SHOP NOW</button>
+        <div class="row box-hero-image">
+          <div class="col-lg-6 box-tagline">
+            <div class="tagline">
+              <div class="title-tagline">It's not just a Coffee<br/>It's<b class="tag-b"> STARBUCKS!</b>
+              </div>
+              <div class="sub-tagline">Carry The Marry</div>
+            </div>
+            <div class="description">The best gift is not the most expensive the most beautiful gift is not the one on the tree of celebration, the most beautiful and the best gift is the birth of our savior. Let us be the bearers of love, peace and light for the world of Merry Christmas. May our lives and families be filled with love and peace, unite with one another by sharing their joy and warmth in our special menu for Christmas this year, with a softer, more cheerful taste and warmth that can unite togetherness in Christmas, because good things happen when we get together</div>
+            <a href="#" class="btn-shop">SHOP NOW</a>
           </div>
-          <div class="col-lg-6">
-            <img class="hero-image" src="img/product-hero-image.png" alt="Product">
+          <div class="col-lg-6 box-product">
+            <img class="product" src="img/product-hero-image.svg" alt="product-hero-image">
+            <a href="#" class="btn-shop-mobile">SHOP NOW</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- end of Hero Image -->
+    <!--------- end of HERO IMAGE --------->
 
-    <!-- Popular Menu -->
-    <div class="container">
-      <div class="row justify-content-center">
-        <h2 class="pl-1">POPULAR </h2><h2 class="pl-2">MENU</h2>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col"><button class="col-button" href="#">
-          <img class="pop-item" src="img/drink.png" alt="Minuman Populer">
-          <a class="sub-menu" href="#">Latte</a>
-          <a class="name-item" href="#">Chocolate Latte with Whipped Cream</a>
-          <b class="price">59K</b>
-        </button></div>
-        <div class="col"><button class="col-button" href="#">
-          <img class="pop-item" src="img/drink.png" alt="Minuman Populer">
-          <a class="sub-menu" href="#">Latte</a>
-          <a class="name-item" href="#">Chocolate Latte with Whipped Cream</a>
-          <b class="price">59K</b>
-        </button></div>
-        <div class="col"><button class="col-button" href="#">
-          <img class="pop-item" src="img/drink.png" alt="Minuman Populer">
-          <a class="sub-menu" href="#">Latte</a>
-          <a class="name-item" href="#">Chocolate Latte with Whipped Cream</a>
-          <b class="price">59K</b>
-        </button></div>
-        <div class="col"><button class="col-button" href="#">
-          <img class="pop-item" src="img/drink.png" alt="Minuman Populer">
-          <a class="sub-menu" href="#">Latte</a>
-          <a class="name-item" href="#">Chocolate Latte with Whipped Cream</a>
-          <b class="price">59K</b>
-        </button></div>
-        <div class="col"><button class="col-button" href="#">
-          <img class="pop-item" src="img/drink.png" alt="Minuman Populer">
-          <a class="sub-menu" href="#">Latte</a>
-          <a class="name-item" href="#">Chocolate Latte with Whipped Cream</a>
-          <b class="price">59K</b>
-        </button></div>
+    <!--------- POPULAR MENU --------->
+    <div class="popular-menu">
+      <div class="container">
+        <div class="row box-popular-menu">
+          <h2 class="text-popular-menu"><span id="text-popular">POPULAR</span> <span id="text-menu">MENU</span></h2>
+        </div>
+        <div class="carousel" data-flickity>
+          <div class="carousel-cell">
+            <img class="img-menu" src="img/drink.svg" alt="drink">
+            <a class="sub-menu" href="#">Latte</a>
+            <a class="name-menu" href="#">Choco Latte with Whipped Cream</a>
+            <span class="price">59K</span>
+          </div>
+          <div class="carousel-cell">
+            <img class="img-menu" src="img/drink-2.svg" alt="drink">
+            <a class="sub-menu" href="#">Frappucino</a>
+            <a class="name-menu" href="#">Frappucino Cotton Candy Ice</a>
+            <span class="price">60K</span>
+          </div>
+          <div class="carousel-cell">
+            <img class="img-menu" src="img/drink-3.svg" alt="drink">
+            <a class="sub-menu" href="#">Cinnamon</a>
+            <a class="name-menu" href="#">Toast Crunch with Cinnamon</a>
+            <span class="price">45K</span>
+          </div>
+          <div class="carousel-cell">
+            <img class="img-menu" src="img/drink-4.svg" alt="drink">
+            <a class="sub-menu" href="#">Green Tea</a>
+            <a class="name-menu" href="#">Green Tea with vanilla Creme</a>
+            <span class="price">55K</span>
+          </div>
+          <div class="carousel-cell">
+            <img class="img-menu" src="img/drink-5.svg" alt="drink">
+            <a class="sub-menu" href="#">Chocolate</a>
+            <a class="name-menu" href="#">Chocolate Molten Cake Frappuccino</a>
+            <span class="price">79K</span>
+          </div>
+          <div class="carousel-cell">
+            <img class="img-menu" src="img/drink-6.svg" alt="drink">
+            <a class="sub-menu" href="#">Green Tea</a>
+            <a class="name-menu" href="#">Frappucino Creme GreenTea Ice</a>
+            <span class="price">65K</span>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- end of Popular Menu -->
+    <!--------- end of POPULAR MENU --------->
 
-    <!-- Special Promo -->
-    <div class="row justify-content-center">
-      
+    <!--------- SPECIAL EDITION --------->
+    <div class="special-edition">
+      <div class="container">
+        <a class="row box-special-edition" href="#">
+          <div class="col-lg-6 text-promo">
+            <div class="text"><span id="text1">Starbucks</span> <span id="text2">Cristmas</span><br/><span id="text3">Special</span> <span id="text4">Edition</span></div>
+            <div class="sub-text">Starbucks Holiday Coffee Blend Set Special Marry Christmas © 2020</div>
+          </div>
+          <div class="col-lg-6 img-promo">
+            <img class="se-img" src="img/special-edition.svg" alt="Special Edition">
+          </div>
+        </a>
+      </div>
     </div>
-    <!-- end of Special Promo -->
+    <!--------- end of SPECIAL EDITION --------->
 
-    <!-- Profile & Testi -->
-    <!-- end of Profile & Testi -->
+    <!--------- PROFILE --------->
+    <div class="parallax">
+      <div class="container">
+        <div class="row profile">
+          <div class="col-lg-12 box-title-profile">
+            <div class="title-profile">WHO WE ARE</div>
+          </div>
+          <div class="col-lg-6 video-profile">
+            <iframe class="comprof" height="300em" src="https://www.youtube.com/embed/Qyjwbse37Sw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-6 description-profile">
+            <div class="desc-comprof">"Starbucks Coffee Indonesia opens its first outlet in Plaza Indonesia, 17 May 2002. As of January 2018, Starbucks Coffee Indonesia is now located in 326 different locations across major cities (22 cities), connecting one cup to Indonesians at a time. Starbucks sells hot and cold drinks, coffee beans, salads, hot and cold sandwiches, sweet pastries, snacks, and items such as glasses and tumblers. Through the Starbucks Entertainment division and the Hear Music brand, the company also markets books, music and films."</div>
+            <center><a class="more-desc" href="#">READ MORE</a></center>
+          </div>
+        </div>
+        <div class="row 2in">
+          <div class="col-lg-6 testimoni">
+            <div class="title-testimoni">TESTIMONI</div>
+            <div class="box-testimoni">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="box-testi">
+                      <div class="testi">
+                        <div class="testi-img"><img src="img/testi-1.svg" alt="testi-1"></div>
+                        <h3 class="name-customer">Akbar Rahman Tedi</h3>
+                        <h4 class="name-tag">Dosen</h4>
+                      </div>
+                      <div class="testi-area">
+                        “saya sering mengajak keluarga kecil untuk menikmati coffee dan cookies favorite istri dan anak saya disini, aroma kopi yang khas juga membuat kita merasa nyaman untuk nongkrong santai disini pelayanannya juga baik.“
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box-testi">
+                      <div class="testi">
+                        <div class="testi-img"><img src="img/testi-2.svg" alt="testi-1"></div>
+                        <h3 class="name-customer">Sergio Sthephen tex</h3>
+                        <h4 class="name-tag">Musisi</h4>
+                      </div>
+                      <div class="testi-area">
+                        “Saya suka sekali dengan vibes yang diberikan didalamnya saya sering nongkrong dengan teman teman saya untuk mengumpulkan ide atau hanya sekedar menikmati menu menu coffee dan non coffee yang ngga mengecewakan.”
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box-testi">
+                      <div class="testi">
+                        <div class="testi-img"><img src="img/testi-3.svg" alt="testi-1"></div>
+                        <h3 class="name-customer">Cilla Apriliya</h3>
+                        <h4 class="name-tag">Mahasiswa</h4>
+                      </div>
+                      <div class="testi-area">
+                        “Menghabiskan waktu istirahat kampus di Starbucks Caffe menurut aku adalah pilihan yang tepat, karena tempatnya yang dekat dengan kampus, tempatnya yang tenang dan nyaman dan instagramable serta jaringan internet wi-fi yang cepat.”
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 barista-idol">
+            <div class="title-barista-idol">BARISTA IDOL</div>
+            <div class="box-barista-idol">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <iframe class="video-barista" height="300em" src="https://www.youtube.com/embed/enC70CnunC0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe class="video-barista" height="300em" src="https://www.youtube.com/embed/Lf5YO2aK3RU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe class="video-barista" height="300em" src="https://www.youtube.com/embed/QWE3JSX1uLA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------- end of PROFILE --------->
 
-    <!-- Location -->
-    <!-- end of Location -->
+    <!--------- TESTIMONI --------->
+    <!--------- end of TESTIMONI --------->
 
+    <!--------- BARISTA IDOL --------->
+    <!--------- end of BARISTA IDOL --------->
+
+    <!--------- LOCATION STORE --------->
+    <div class="location">
+      <div class="container">
+        <div class="row box-popular-menu">
+          <h2 class="text-popular-menu title-location"><span id="text-popular">Find</span> <span id="text-menu">the nearest</span> <span id="text-popular">Starbucks</span></h2>
+        </div>
+        <div class="row maps">
+          <iframe class="google-maps" src="https://www.google.com/maps/d/embed?mid=1SpmhvugKvSZYGr3zRNK6QvU9359Q7mY7"></iframe>
+        </div>
+      </div>
+    </div>
+    <!--------- end of LOCATION STORE ---------->
+
+    <!--------- FOOTER --------->
+    <div class="footer">
+      <div class="container">
+        <div class="row box-footer">
+          <div class="col-lg-3 footer-menu-1">
+            <div class="footer-menu">SITE INFO</div>
+            <div class="footer-box-sub-menu">
+              <a class="footer-sub-menu" href="#">Privacy Statement</a>
+              <a class="footer-sub-menu" href="#">Terms of Use</a>
+              <a class="footer-sub-menu" href="#">Site Map</a>
+              <a class="footer-sub-menu" href="#">Cookies Preferences</a>
+              <a class="footer-sub-menu" href="#">Newsroom</a>
+            </div>
+          </div>
+          <div class="col-lg-3 footer-menu-2">
+            <div class="footer-menu">ABOUT US</div>
+            <div class="footer-box-sub-menu">
+              <a class="footer-sub-menu" href="#">Our Heritage</a>
+              <a class="footer-sub-menu" href="#">Pressroom</a>
+              <a class="footer-sub-menu" href="#">Our Company</a>
+              <a class="footer-sub-menu" href="#">Career Center</a>
+            </div>
+          </div>
+          <div class="col-lg-3 footer-menu-3">
+            <div class="footer-menu">QUICK LINKS</div>
+            <div class="footer-box-sub-menu">
+              <a class="footer-sub-menu" href="#">Store Locator</a>
+              <a class="footer-sub-menu" href="#">For Partner</a>
+              <a class="footer-sub-menu" href="#">Our Company</a>
+              <a class="footer-sub-menu" href="#">Call Center</a>
+            </div>
+          </div>
+          <div class="col-lg-3 footer-menu-4">
+            <div class="footer-menu">CUSTOMER SERVICE</div>
+            <div class="footer-box-sub-menu">
+              <a class="footer-sub-menu" href="#">Frequently Asked Questions</a>
+              <a class="footer-sub-menu" href="#">Delivery Magic</a>
+            </div>
+          </div>
+        </div>
+        <div class="row copyright">© Copyright 2020 | Design by M. Ifa Amrillah & Hanifatul Izza</div>
+      </div>
+    </div>
+    <!--------- END OF FOOTER --------->
+
+    <!-- Carousel Javascript -->
+    <script src="https://unpkg.com/flickity@2.0.11/dist/flickity.pkgd.min.js"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+      -->
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
+    
   </body>
 </html>

@@ -1,0 +1,1133 @@
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "santana-black";
+    src: url(../fonts/Santana-Black.ttf);
+}
+
+@font-face {
+    font-family: "silvertone";
+    src: url(../fonts/Silvertone.ttf);
+}
+
+/* ===== UNIVERSAL ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-family: santana-black;
+}
+
+.btn {
+    background: #BC2342;
+    border-radius: 30px;
+}
+
+.hero-image {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+}
+
+.tagline {
+    width: 100%;
+}
+
+.title-tagline {
+    color: white;
+    font-weight: bold;
+}
+
+.tag-b {
+    color: #FFB32F;
+}
+
+.sub-tagline {
+    font-family: silvertone;
+    text-align: right;
+    color: white;
+    transform: rotate(-11.71deg);
+}
+
+.product {
+    width: 90%;
+    height: auto;
+}
+
+.description {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+.btn-shop {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFB32F;
+    border: 2px solid #F89F2A;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 0.2em 0.8em 0.2em 0.8em;
+}
+
+.btn-shop-mobile {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFB32F;
+    border: 2px solid #F89F2A;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 0.2em 0.8em 0.2em 0.8em;
+}
+
+.btn-shop:hover {
+    color: white;
+    background-color: #F89F2A;
+    text-decoration: none;
+}
+
+.btn-shop-mobile:hover {
+    color: white;
+    background-color: #F89F2A;
+    text-decoration: none;
+}
+
+.box-popular-menu {
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.text-popular-menu {
+    font-weight: bold;
+}
+
+#text-popular {
+    color: black;
+}
+
+#text-menu {
+    color: #51BE54;
+}
+
+.carousel {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-cell {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px 10px;
+    background: #CDCDCD;
+    width: 200px;
+    height: 280px;
+    border-radius: 30px;
+}
+
+.carousel-cell:hover {
+    background: #007552;
+}
+
+.img-menu {
+    margin: auto;
+    display: block;
+    width: 130px;
+    height: 130px;
+}
+
+.sub-menu {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #767676;
+}
+
+.carousel-cell:hover .sub-menu {
+    color: #004D37;
+}
+
+.name-menu {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+}
+
+.carousel-cell:hover .name-menu {
+    color: black;
+}
+
+.price {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #007552;
+}
+
+.carousel-cell:hover .price {
+    color: white !important;
+}
+
+.box-special-edition {
+    display: flex;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: auto;
+    background: #007655;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-special-edition:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-promo {
+    text-align: right;
+    justify-content: center;
+    padding-right: 0px;
+}
+
+.text {
+    font-weight: bold;
+}
+
+#text1 {
+    color: white;
+}
+
+#text2 {
+    color: black;
+}
+
+#text3 {
+    color: #FFB32F;
+}
+
+#text4 {
+    color: white;
+}
+
+.sub-text {
+    color: white;
+}
+
+.se-img {
+    width: 90%;
+    height: auto;
+    margin-top: -25%;
+}
+
+.parallax {
+    background-image: url(../img/bg-profile.svg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-title-profile {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.testimoni {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.barista-idol {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.title-profile {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.title-testimoni {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.title-barista-idol {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.comprof {
+    width: 100%;
+    border: 0px;
+    border-radius: 2em;
+}
+
+.desc-comprof {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    width: 90%;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    line-height: 30px;
+}
+
+.more-desc {
+    margin-top: 10%;
+    font-style: normal;
+    font-size: 17px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    box-sizing: border-box;
+    padding: 0.2em 0.8em 0.2em 0.8em;
+}
+
+.more-desc:hover {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.box-testi {
+    padding: 5%;
+    box-sizing: border-box;
+    width: 95%;
+    margin: auto;
+    border-radius: 2em;
+}
+
+.name-customer {
+    font-weight: bold;
+
+}
+
+.testi-area {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.testi-img {
+    width: 3em;
+    height: auto;
+    margin: auto;
+}
+
+.testi-img img {
+    width: 100%;
+    height: auto;
+}
+
+.name-customer {
+    margin-top: 2%;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+.name-tag {
+    color: gray;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -50px;
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 0.5em;
+    height: 0.5em;
+}
+
+.carousel-item {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.video-profile {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.video-barista {
+    width: 100%;
+    border-radius: 2em;
+}
+
+.footer {
+    background: #2D3646;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.footer-menu {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 3%;
+}
+
+.footer-sub-menu {
+    display: block;
+    color: white;
+    margin-bottom: 1%;
+}
+
+.footer-box-sub-menu {
+    margin-bottom: 2%;
+}
+
+.footer-box-sub-menu a:hover {
+    color: #007655;
+}
+
+.copyright {
+    margin-top: 2%;
+    color: #cdcdcd;
+    justify-content: center;
+    font-size: 0.7em;
+}
+
+.google-maps {
+    width: 100%;
+    height: 30em;
+    border: 0;
+    margin-bottom: 5%;
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 992px) {
+    .navbar-brand {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        color: white !important;
+        font-size: 30px;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-link {
+        font-size: 0.88em;
+        color: white !important;
+    }
+
+    .btn {
+        margin-left: 4px;
+        margin-top: 6px;
+        padding: 0;
+    }
+
+    .hero-image {
+        margin-top: -61px;
+        background-image: url(../img/bg-hero-image-desktop.svg);
+        padding-top: 91px;
+        padding-bottom: 3%;
+    }
+
+    .title-tagline {
+        font-size: 50px;
+    }
+
+    .tag-b {
+        font-size: 58px;
+    }
+
+    .sub-tagline {
+        font-size: 40px;
+        margin-bottom: -10px;
+    }
+
+    .box-product {
+        padding-left: 0px;
+    }
+
+    .btn-shop-mobile {
+        display: none;
+    }
+
+    .text-popular-menu {
+        font-size: 35px;
+    }
+
+    .popular-menu {
+        margin-bottom: 4%;
+    }
+
+    .special-edition {
+        margin-top: 7%;
+    }
+
+    .box-special-edition {
+        width: 97%;
+        border-radius: 45px;
+    }
+
+    .text {
+        font-size: 2.8em;
+    }
+
+    .sub-text {
+        font-size: 0.9em;
+    }
+
+    .img-promo {
+        margin-bottom: -3%;
+    }
+
+    .title-profile {
+        font-size: 2em;
+    }
+
+    .title-testimoni {
+        font-size: 2em;
+    }
+
+    .title-barista-idol {
+        font-size: 2em;
+    }
+
+    .box-testi {
+        height: 270px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1202.98px) {
+    .title-tagline {
+        font-size: 42px;
+    }
+
+    .tag-b {
+        font-size: 50px;
+    }
+
+    .sub-tagline {
+        font-size: 30px;
+        margin-bottom: -10px;
+    }
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar-brand {
+        color: black;
+        font-size: 27px;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-link {
+        color: black !important;
+    }
+
+    .btn {
+        padding: 3px;
+        color: white !important;
+    }
+
+    .hero-image {
+        background-image: url(../img/bg-hero-image-tablet.svg);
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .title-tagline {
+        font-size: 60px;
+    }
+
+    .tag-b {
+        font-size: 70px;
+    }
+
+    .sub-tagline {
+        font-size: 40px;
+        margin-bottom: -20px;
+    }
+
+    .product {
+        width: 50%;
+        float: right;
+        margin-top: -50%;
+    }
+
+    .description {
+        width: 50%;
+        margin-top: -5%;
+    }
+
+    .btn-shop-mobile {
+        display: none;
+    }
+
+    .text-popular-menu {
+        font-size: 2.5em;
+    }
+
+    .popular-menu {
+        margin-bottom: 6%;
+    }
+
+    .special-edition {
+        margin-top: 9%;
+    }
+
+    .box-special-edition {
+        border-radius: 40px;
+    }
+
+    .text-promo {
+        flex: 1.1;
+    }
+
+    .img-promo {
+        flex: 0.9;
+    }
+
+    .text {
+        font-size: 2em;
+    }
+
+    .sub-text {
+        font-size: 0.6em;
+    }
+
+    .title-profile {
+        font-size: 2.5em;
+    }
+
+    .title-testimoni {
+        font-size: 2.5em;
+    }
+
+    .title-barista-idol {
+        font-size: 2.5em;
+    }
+
+    .desc-comprof {
+        display: none;
+    }
+
+    .more-desc {
+        display: none;
+    }
+
+    .carousel-item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer-menu-1 {
+        float: left;
+        width: 50%;
+    }
+
+    .footer-menu-2 {
+        float: right;
+        width: 50%;
+    }
+
+    .footer-menu-3 {
+        float: left;
+        width: 50%;
+    }
+
+    .footer-menu-4 {
+        float: right;
+        width: 50%;
+    }
+
+    .box-testi {
+        background: rgba(0, 0, 0, 0.75);
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar-brand {
+        color: black;
+        font-size: 25px;
+    }
+
+    .navbar-brand img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .nav-link {
+        color: black !important;
+    }
+
+    .btn {
+        padding: 2.5px;
+        color: white !important;
+    }
+
+    .hero-image {
+        background-image: url(../img/bg-hero-image-mobile.svg);
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .title-tagline {
+        font-size: 50px;
+    }
+
+    .tag-b {
+        font-size: 55px;
+    }
+
+    .sub-tagline {
+        font-size: 35px;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .product {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    .btn-shop {
+        display: none;
+    }
+
+    .btn-shop-mobile {
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .text-popular-menu {
+        font-size: 5vw;
+    }
+
+    .popular-menu {
+        margin-bottom: 9%;
+    }
+
+    .carousel-cell {
+        width: 50%;
+        height: auto;
+    }
+
+    .img-menu {
+        width: 90%;
+        height: auto;
+    }
+
+    .sub-menu {
+        font-size: 1em;
+    }
+
+    .name-menu {
+        font-size: 1.2em;
+    }
+
+    .price {
+        font-size: 1.5em;
+        margin-bottom: 0px;
+    }
+
+    .special-edition {
+        margin-top: 12%;
+    }
+
+    .box-special-edition {
+        margin-top: 50%;
+        border-radius: 50px;
+    }
+
+    .img-promo {
+        order: 1;
+    }
+
+    .se-img {
+        margin-top: -40%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .text-promo {
+        margin-top: -5%;
+        text-align: center;
+        order: 2;
+        margin-bottom: 4%;
+    }
+
+    .text {
+        font-size: 2.5em;
+    }
+
+    .sub-text {
+        display: none;
+    }
+
+    .title-profile {
+        font-size: 2em;
+    }
+
+    .title-testimoni {
+        font-size: 2em;
+    }
+
+    .title-barista-idol {
+        font-size: 2em;
+    }
+
+    .more-desc {
+        display: none;
+    }
+
+    .desc-comprof {
+        display: none;
+    }
+
+    .carousel-item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .box-testi {
+        width: 95%;
+    }
+
+    .footer-menu-1 .footer-box-sub-menu {
+        display: none;
+    }
+
+    .footer-menu-1 .footer-menu:hover+.footer-box-sub-menu {
+        display: block;
+    }
+
+    .footer-menu-2 .footer-box-sub-menu {
+        display: none;
+    }
+
+    .footer-menu-2 .footer-menu:hover+.footer-box-sub-menu {
+        display: block;
+    }
+
+    .footer-menu-3 .footer-box-sub-menu {
+        display: none;
+    }
+
+    .footer-menu-3 .footer-menu:hover+.footer-box-sub-menu {
+        display: block;
+    }
+
+    .footer-menu-4 .footer-box-sub-menu {
+        display: none;
+    }
+
+    .footer-menu-4 .footer-menu:hover+.footer-box-sub-menu {
+        display: block;
+    }
+
+    .footer-menu {
+        text-align: center;
+    }
+
+    .footer-sub-menu {
+        text-align: center
+    }
+
+    .box-testi {
+        background: rgba(0, 0, 0, 0.75);
+    }
+
+    .google-maps {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 20em;
+        margin-bottom: 7%;
+    }
+
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (min-width: 320px) and (max-width: 575.98px) {
+    .navbar-brand {
+        color: black;
+        font-size: 23px;
+    }
+
+    .navbar-brand img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-link {
+        color: black !important;
+    }
+
+    .btn {
+        padding: 2px;
+        color: white !important;
+    }
+
+    .hero-image {
+        background-image: url(../img/bg-hero-image-mobile.svg);
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .title-tagline {
+        font-size: 9vw;
+    }
+
+    .tag-b {
+        font-size: 10vw;
+    }
+
+    .sub-tagline {
+        font-size: 5vw;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .product {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    .btn-shop {
+        display: none;
+    }
+
+    .btn-shop-mobile {
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .box-popular-menu {
+        margin-top: 10%;
+        margin-bottom: 4%;
+    }
+
+    .text-popular-menu {
+        font-size: 8vw;
+    }
+
+    .popular-menu {
+        margin-bottom: 15%;
+    }
+
+    .special-edition {
+        margin-top: 18%;
+    }
+
+    .box-special-edition {
+        margin-top: 50%;
+        border-radius: 35px;
+    }
+
+    .img-promo {
+        order: 1;
+    }
+
+    .se-img {
+        margin-top: -30%;
+        width: 95%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+
+    .text-promo {
+        order: 2;
+        margin-top: -3%;
+        text-align: center;
+        margin-bottom: 4%;
+    }
+
+    .text {
+        font-size: 1.5em;
+    }
+
+    .sub-text {
+        display: none;
+    }
+
+    .box-title-profile {
+        margin-top: 5%;
+    }
+
+    .title-profile {
+        font-size: 1.5em;
+    }
+
+    .title-testimoni {
+        font-size: 1.5em;
+    }
+
+    .title-barista-idol {
+        font-size: 1.5em;
+    }
+
+    .comprof {
+        height: 15em;
+    }
+
+    .video-barista {
+        height: 15em;
+    }
+
+    .more-desc {
+        display: none;
+    }
+
+    .desc-comprof {
+        display: none;
+    }
+
+    .testi-area {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 0.9em;
+    }
+
+    .carousel-indicators {
+        bottom: -40px;
+    }
+
+    .box-testi {
+        width: 100%;
+    }
+
+    .carousel-item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .title-location {
+        text-align: center;
+    }
+
+    .footer-menu-1 .footer-box-sub-menu {
+        display: none;
+    }
+
+    .footer-menu-1 .footer-menu:hover+.footer-box-sub-menu {
+        display: inline;
+    }
+
+    .footer-menu-2 .footer-box-sub-menu {
+        display: none;
+    }
+
+    .footer-menu-2 .footer-menu:hover+.footer-box-sub-menu {
+        display: inline;
+    }
+
+    .footer-menu-3 .footer-box-sub-menu {
+        display: none;
+    }
+
+    .footer-menu-3 .footer-menu:hover+.footer-box-sub-menu {
+        display: inline;
+    }
+
+    .footer-menu-4 .footer-box-sub-menu {
+        display: none;
+    }
+
+    .footer-menu-4 .footer-menu:hover+.footer-box-sub-menu {
+        display: inline;
+    }
+
+    .footer-menu {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .footer-sub-menu {
+        text-align: center
+    }
+
+    .copyright {
+        font-size: 0.5em;
+    }
+
+    .box-testi {
+        background: rgba(0, 0, 0, 0.75);
+    }
+
+    .google-maps {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 20em;
+        margin-bottom: 8%;
+    }
+
+}
